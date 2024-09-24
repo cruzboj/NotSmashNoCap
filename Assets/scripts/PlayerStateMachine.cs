@@ -32,14 +32,27 @@ public class PlayerStateMachine : MonoBehaviour
     private float _rotationFactorPerFrame = 25.0f;
 
     //jump
-    private bool _isJumpPressed = false; // JumpPressed
-    private int _jumpCount = 0; // jump counter
+    public bool _isJumpPressed = false; // JumpPressed
+    public int _jumpCount = 0; // jump counter
     private int _maxJumpCount = 1; // max Jumps allowed
     private float _jumpForce = 12f;
 
     //Attack Normal
     public bool _isAttackNPressed;
+    public int _attackCycle;
+    private int _numberOfAttacks = 3; // Total number of attacks in the cycle
+    public int NumberOfAttacks { get { return _numberOfAttacks; } }
+    public int AttackCycle { get => _attackCycle; set { _attackCycle = value >= _numberOfAttacks ? 0 : value; } }
 
+    //new Animator States
+    private string _animationState;
+    //const string _PLAYER_IDLE = "Player_idle";
+    //const string _PLAYER_WALK = "Player_walk";
+    //const string _PLAYER_RUN = "Player_run";
+    //const string _PLAYER_JUMP = "Player_jump";
+    //const string _PLAYER_JUMP2 = "Player_jump2";
+    //const string _PLAYER_ATTACK = "Player_attack";
+    public string AnimationState {  get { return _animationState; } set { _animationState = value; } }
 
     // Animator Hashes
     private int _isWalkingHash;
@@ -58,10 +71,9 @@ public class PlayerStateMachine : MonoBehaviour
     public Animator Animator { get { return _animator; } }
     public bool Grounded {get { return _grounded; } set { _grounded = value; } }
     public float DownForce { get { return _downForce; } }
-    //public float GroundCheckDistance {  get { return _groundCheckDistance; } }
     public bool IsMovementPressed { get { return _isMovementPressed; } }
     public Vector2 CurrentMovementInput { get { return _currentMovementInput; } }
-    public Vector2 CurrentMovement { get { return _currentMovement; } }
+    public Vector2 CurrentMovement { get { return _currentMovement; } set { _currentMovement = value; } }
     public float WalkSpeed { get { return _walkSpeed; } }
     public float RunSpeed { get { return _runSpeed; } }
     public float Threshold { get { return _threshold; } }
@@ -105,7 +117,7 @@ public class PlayerStateMachine : MonoBehaviour
         _playerInput.CharacterControls.Move.canceled += onMovementInput;
         _playerInput.CharacterControls.Jump.started += onJump;
         _playerInput.CharacterControls.AttackN.started += onAttackN;
-        //_playerInput.CharacterControls.AttackN.canceled += onAttackN;
+        _playerInput.CharacterControls.AttackN.canceled += onAttackN;
     }
     void Update()
     {
@@ -135,7 +147,7 @@ public class PlayerStateMachine : MonoBehaviour
         }
 
     }
-
+    
 
     void onMovementInput(InputAction.CallbackContext context)
     {
@@ -161,9 +173,13 @@ public class PlayerStateMachine : MonoBehaviour
     }
     void onAttackN(InputAction.CallbackContext context)
     {
-        if (context.started) //if jump is pressed
+        if (context.started) // If Attack Normal is pressed
         {
             _isAttackNPressed = true;
+        }
+        else if (context.canceled) // If Attack Normal is released
+        {
+            _isAttackNPressed = false;
         }
     }
     void handleRotation()
@@ -212,5 +228,20 @@ public class PlayerStateMachine : MonoBehaviour
                 Debug.Log("Device Reconnected::" + device.name);
                 break;
         }
+    }
+    //void changeAnimeationState(string newState)
+    //{
+    //    //stop the same animation from interruptting itself
+    //    if (_animationState == newState) return;
+
+    //    //play the animation
+    //    _animator.Play(newState);
+
+    //    //reassign the current state
+    //    _animationState = newState;
+    //}
+    public void StartStateCoroutine(IEnumerator coroutine)
+    {
+        StartCoroutine(coroutine);
     }
 }

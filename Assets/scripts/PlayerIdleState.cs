@@ -4,14 +4,16 @@ using UnityEngine;
 
 public class PlayerIdleState : PlayerBaseState
 {
+    const string _PLAYER_IDLE = "Player_idle";
     public PlayerIdleState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory)
     : base(currentContext, playerStateFactory)
     { }
     public override void EnterState()
     {
-        Ctx.Animator.SetBool(Ctx.IsWalkingHash, false);
-        Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
-        Ctx.Animator.SetBool(Ctx.IsJumpingHash, false);
+        changeAnimeationState(_PLAYER_IDLE);
+        //Ctx.Animator.SetBool(Ctx.IsWalkingHash, false);
+        //Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
+        //Ctx.Animator.SetBool(Ctx.IsJumpingHash, false);
     }
     public override void UpdateState()
     {
@@ -31,11 +33,17 @@ public class PlayerIdleState : PlayerBaseState
         {
             SwitchState(Factory.Run());
         }
-        else if (Ctx.IsAttackNPressed)
-        {
-            SwitchState(Factory.AttackN());
-        }
         
     }
+    void changeAnimeationState(string newState)
+    {
+        //stop the same animation from interruptting itself
+        if (Ctx.AnimationState == newState) return;
 
+        //play the animation
+        Ctx.Animator.Play(newState);
+
+        //reassign the current state
+        Ctx.AnimationState = newState;
+    }
 }

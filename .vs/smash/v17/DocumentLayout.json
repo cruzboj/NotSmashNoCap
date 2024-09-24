@@ -3,44 +3,44 @@
   "WorkspaceRootPath": "D:\\unity\\Uprojects\\smash\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playernormala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playernormala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|d:\\unity\\uprojects\\smash\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|d:\\unity\\uprojects\\smash\\assets\\playermoveset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\playermoveset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerrunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerrunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerwalkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwalkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatefactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|d:\\unity\\uprojects\\smash\\assets\\scripts\\playernormala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playernormala.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\playermoveset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\playermoveset.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playergroundedstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerjumpstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerwalkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerwalkstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerrunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerrunstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -50,43 +50,30 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "PlayerMoveSet.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\PlayerMoveSet.cs",
-              "RelativeDocumentMoniker": "Assets\\PlayerMoveSet.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\PlayerMoveSet.cs",
-              "RelativeToolTip": "Assets\\PlayerMoveSet.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T21:58:10.067Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "PlayerNormalA.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerNormalA.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerNormalA.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerNormalA.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerNormalA.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwCgAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAQwBoAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T18:55:35.166Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "PlayerJumpState.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerJumpState.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerJumpState.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerJumpState.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerJumpState.cs",
-              "ViewState": "AgIAADAAAAAAAAAAAAAmwEIAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T02:56:37.029Z",
               "EditorCaption": ""
@@ -99,20 +86,20 @@
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerIdleState.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerIdleState.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerIdleState.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAcwCIAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wA0AAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T19:26:07.882Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "PlayerWalkState.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerWalkState.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerWalkState.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerWalkState.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerWalkState.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAwwBIAAAAvAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABsAAABEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T19:25:34.049Z",
               "EditorCaption": ""
@@ -120,32 +107,71 @@
             {
               "$type": "Document",
               "DocumentIndex": 9,
+              "Title": "PlayerRunState.cs",
+              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerRunState.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerRunState.cs",
+              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerRunState.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerRunState.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T00:45:51.747Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "PlayerGroundedState.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerGroundedState.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerGroundedState.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerGroundedState.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerGroundedState.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCkAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAcwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T19:21:30.369Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 1,
               "Title": "PlayerStateFactory.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateFactory.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerStateFactory.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateFactory.cs",
               "RelativeToolTip": "Assets\\scripts\\PlayerStateFactory.cs",
-              "ViewState": "AgIAABkAAAAAAAAAAAAcwBEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAowBEAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-23T18:56:45.936Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerStateMachine.cs",
+              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerStateMachine.cs",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAYwIsAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-22T18:43:12.926Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PlayerMoveSet.cs",
+              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\PlayerMoveSet.cs",
+              "RelativeDocumentMoniker": "Assets\\PlayerMoveSet.cs",
+              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\PlayerMoveSet.cs",
+              "RelativeToolTip": "Assets\\PlayerMoveSet.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-23T21:58:10.067Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "PlayerBaseState.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerBaseState.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\PlayerBaseState.cs",
@@ -154,32 +180,6 @@
               "ViewState": "AgIAAC8AAAAAAAAAAAAmwDUAAAA/AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-09-22T19:14:31.614Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerStateMachine.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\scripts\\PlayerStateMachine.cs",
-              "ViewState": "AgIAAI0AAAAAAAAAAAAowKQAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-22T18:43:12.926Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerRunState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerRunState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerRunState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerRunState.cs",
-              "RelativeToolTip": "Assets\\scripts\\PlayerRunState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-23T00:45:51.747Z",
               "EditorCaption": ""
             }
           ]

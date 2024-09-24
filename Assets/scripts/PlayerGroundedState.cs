@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class PlayerGroundedState : PlayerBaseState
 {
+    const string _PLAYER_IDLE = "Player_idle";
     public PlayerGroundedState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory)
     : base(currentContext, playerStateFactory)
     {
@@ -11,11 +12,15 @@ public class PlayerGroundedState : PlayerBaseState
         InitalizeSubState();
     }
 
-    public override void EnterState(){}
+    public override void EnterState()
+    { 
+        //changeAnimeationState(_PLAYER_IDLE); 
+    }
 
     public override void UpdateState()
     {
         CheckSwitchStates();
+        GroundCheck();
     }
 
     public override void ExitState() { }
@@ -37,9 +42,38 @@ public class PlayerGroundedState : PlayerBaseState
         {
             SwitchState(Factory.Jump());
         }
-        else if (Ctx.IsAttackNPressed)
+
+        if (Ctx.IsAttackNPressed)
         {
             SwitchState(Factory.AttackN());
         }
     }
+    private bool GroundCheck()
+    {
+        // Check if the box collides with the ground and set the grounded status
+        if (Physics.CheckBox(Ctx.transform.position, Ctx.boxSize, Ctx.transform.rotation, Ctx.layerMask))
+        {
+            Debug.Log("Grounded");
+            Ctx.JumpCount = 0;
+            Ctx.Grounded = true;
+            return true;
+        }
+        else
+        {
+            Debug.Log("NOT grounded");
+            Ctx.Grounded = false;
+            return false;
+        }
+    }
+    //void changeAnimeationState(string newState)
+    //{
+    //    //stop the same animation from interruptting itself
+    //    if (Ctx.AnimationState == newState) return;
+
+    //    //play the animation
+    //    Ctx.Animator.Play(newState);
+
+    //    //reassign the current state
+    //    Ctx.AnimationState = newState;
+    //}
 }

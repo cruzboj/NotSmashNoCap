@@ -4,12 +4,14 @@ using UnityEngine;
 
 public class PlayerWalkState : PlayerBaseState
 {
+    const string _PLAYER_WALK = "Player_walk";
     public PlayerWalkState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory)
     : base(currentContext, playerStateFactory) { }
     public override void EnterState()
     {
-        Ctx.Animator.SetBool(Ctx.IsWalkingHash, true);
-        Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
+        changeAnimeationState(_PLAYER_WALK);
+        //Ctx.Animator.SetBool(Ctx.IsWalkingHash, true);
+        //Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
     }
     public override void UpdateState()
     {
@@ -27,10 +29,16 @@ public class PlayerWalkState : PlayerBaseState
         {
             SwitchState(Factory.Run());
         }
-        else if (Ctx.IsAttackNPressed)
-        {
-            SwitchState(Factory.AttackN());
-        }
     }
+    void changeAnimeationState(string newState)
+    {
+        //stop the same animation from interruptting itself
+        if (Ctx.AnimationState == newState) return;
 
+        //play the animation
+        Ctx.Animator.Play(newState);
+
+        //reassign the current state
+        Ctx.AnimationState = newState;
+    }
 }

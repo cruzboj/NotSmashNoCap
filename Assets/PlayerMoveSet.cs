@@ -18,15 +18,14 @@ public class PlayerMoveSet : MonoBehaviour
     public Vector3 boxSize = new Vector3(1f, 0.3f, 1f);
     //
     public bool _grounded = true;
-    public float _downForce = 9.8f;
+    private float _downForce = 9.8f;
     //private float _groundCheckDistance = 0.5f;
 
     //movement
     public bool _isMovementPressed;
     Vector2 _currentMovementInput;
     Vector2 _currentMovement;
-    public float _moveSpeed = 5f;
-    public float _rotationFactorPerFrame = 25.0f;
+    private float _rotationFactorPerFrame = 25.0f;
     //new movement
     public float _walkSpeed = 3f;
     public float _runSpeed = 6f;
@@ -34,7 +33,7 @@ public class PlayerMoveSet : MonoBehaviour
     private float _threshold = 0.8f;
 
     //Attack Normal
-    private bool _isAttackNPressed;
+    public bool _isAttackNPressed;
 
     //jump
     private bool _isJumpPressed = false; // JumpPressed
@@ -66,6 +65,7 @@ public class PlayerMoveSet : MonoBehaviour
         _playerInput.CharacterControls.Move.canceled += onMovementInput;
         _playerInput.CharacterControls.Jump.started += onJump;
         _playerInput.CharacterControls.AttackN.started += onAttackN;
+        _playerInput.CharacterControls.AttackN.performed += onAttackN;
         _playerInput.CharacterControls.AttackN.canceled += onAttackN;
 
     }
@@ -136,10 +136,10 @@ public class PlayerMoveSet : MonoBehaviour
         //Debug.Log($"Movement input: {_currentMovementInput.x}, Speed set to: {_currentSpeed}");
 
         // Update animator parameters based on speed
-        if(_currentSpeed != 0)
+        if (_currentSpeed != 0)
         {
-        _animator.SetBool(_isWalkingHash, _currentSpeed == _walkSpeed);
-        _animator.SetBool(_isRunningHash, _currentSpeed == _runSpeed);
+            _animator.SetBool(_isWalkingHash, _currentSpeed == _walkSpeed);
+            _animator.SetBool(_isRunningHash, _currentSpeed == _runSpeed);
         }
         else
         {
@@ -169,16 +169,22 @@ public class PlayerMoveSet : MonoBehaviour
         {
             //Debug.Log("Cannot jump. Already at max jumps.");
         }
-        else {
+        else
+        {
             _animator.SetBool(_isJumpingHash, false);
         }
     }
     void onAttackN(InputAction.CallbackContext context)
     {
-        if (context.started) //if Attack Normal is pressed
+        if (context.started) // If Attack Normal is pressed
         {
-            Debug.Log("AttackN State Machine");
             _isAttackNPressed = true;
+            Debug.Log("AttackN started");
+        }
+        else if (context.canceled) // If Attack Normal is released
+        {
+            _isAttackNPressed = false;
+            Debug.Log("AttackN canceled");
         }
     }
 
@@ -241,7 +247,7 @@ public class PlayerMoveSet : MonoBehaviour
         InputSystem.onDeviceChange -= OnDeviceChange;
     }
 
-    private void OnDeviceChange(InputDevice device,InputDeviceChange change)
+    private void OnDeviceChange(InputDevice device, InputDeviceChange change)
     {
         switch (change)
         {
