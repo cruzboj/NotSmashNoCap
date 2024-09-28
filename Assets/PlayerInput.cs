@@ -53,6 +53,15 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""processors"": """",
                     ""interactions"": """",
                     ""initialStateCheck"": true
+                },
+                {
+                    ""name"": ""Up"",
+                    ""type"": ""Value"",
+                    ""id"": ""4979bd94-a870-4a04-905c-311c45edc8b2"",
+                    ""expectedControlType"": ""Button"",
+                    ""processors"": """",
+                    ""interactions"": """",
+                    ""initialStateCheck"": true
                 }
             ],
             ""bindings"": [
@@ -176,6 +185,17 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
                     ""action"": ""AttackN"",
                     ""isComposite"": false,
                     ""isPartOfComposite"": false
+                },
+                {
+                    ""name"": """",
+                    ""id"": ""81b256ac-a749-4a78-9d9f-5b364fcf1112"",
+                    ""path"": ""<Gamepad>/leftStick/up"",
+                    ""interactions"": """",
+                    ""processors"": """",
+                    ""groups"": """",
+                    ""action"": ""Up"",
+                    ""isComposite"": false,
+                    ""isPartOfComposite"": false
                 }
             ]
         }
@@ -187,6 +207,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         m_CharacterControls_Move = m_CharacterControls.FindAction("Move", throwIfNotFound: true);
         m_CharacterControls_Jump = m_CharacterControls.FindAction("Jump", throwIfNotFound: true);
         m_CharacterControls_AttackN = m_CharacterControls.FindAction("AttackN", throwIfNotFound: true);
+        m_CharacterControls_Up = m_CharacterControls.FindAction("Up", throwIfNotFound: true);
     }
 
     public void Dispose()
@@ -251,6 +272,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
     private readonly InputAction m_CharacterControls_Move;
     private readonly InputAction m_CharacterControls_Jump;
     private readonly InputAction m_CharacterControls_AttackN;
+    private readonly InputAction m_CharacterControls_Up;
     public struct CharacterControlsActions
     {
         private @PlayerInput m_Wrapper;
@@ -258,6 +280,7 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         public InputAction @Move => m_Wrapper.m_CharacterControls_Move;
         public InputAction @Jump => m_Wrapper.m_CharacterControls_Jump;
         public InputAction @AttackN => m_Wrapper.m_CharacterControls_AttackN;
+        public InputAction @Up => m_Wrapper.m_CharacterControls_Up;
         public InputActionMap Get() { return m_Wrapper.m_CharacterControls; }
         public void Enable() { Get().Enable(); }
         public void Disable() { Get().Disable(); }
@@ -276,6 +299,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @AttackN.started += instance.OnAttackN;
             @AttackN.performed += instance.OnAttackN;
             @AttackN.canceled += instance.OnAttackN;
+            @Up.started += instance.OnUp;
+            @Up.performed += instance.OnUp;
+            @Up.canceled += instance.OnUp;
         }
 
         private void UnregisterCallbacks(ICharacterControlsActions instance)
@@ -289,6 +315,9 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
             @AttackN.started -= instance.OnAttackN;
             @AttackN.performed -= instance.OnAttackN;
             @AttackN.canceled -= instance.OnAttackN;
+            @Up.started -= instance.OnUp;
+            @Up.performed -= instance.OnUp;
+            @Up.canceled -= instance.OnUp;
         }
 
         public void RemoveCallbacks(ICharacterControlsActions instance)
@@ -311,5 +340,6 @@ public partial class @PlayerInput: IInputActionCollection2, IDisposable
         void OnMove(InputAction.CallbackContext context);
         void OnJump(InputAction.CallbackContext context);
         void OnAttackN(InputAction.CallbackContext context);
+        void OnUp(InputAction.CallbackContext context);
     }
 }

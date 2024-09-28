@@ -21,7 +21,7 @@ public class PlayerRunState : PlayerBaseState
     }
 
     public override void ExitState(){
-        Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
+        //Ctx.Animator.SetBool(Ctx.IsRunningHash, false);
     }
     public override void InitalizeSubState(){}
     public override void CheckSwitchStates()

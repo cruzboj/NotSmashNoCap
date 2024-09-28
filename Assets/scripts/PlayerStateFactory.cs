@@ -27,8 +27,9 @@ public class PlayerStateFactory
     {
         return new PlayerGroundedState(_context, this);
     }
-    public PlayerBaseState AttackN()
+
+    public PlayerBaseState Attack()
     {
-        return new PlayerNormalA(_context, this);
+        return new AttackBaseState(_context, this);
     }
 }

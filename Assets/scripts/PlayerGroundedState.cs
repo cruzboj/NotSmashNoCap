@@ -45,7 +45,7 @@ public class PlayerGroundedState : PlayerBaseState
 
         if (Ctx.IsAttackNPressed)
         {
-            SwitchState(Factory.AttackN());
+            SwitchState(Factory.Attack());
         }
     }
     private bool GroundCheck()
@@ -53,14 +53,14 @@ public class PlayerGroundedState : PlayerBaseState
         // Check if the box collides with the ground and set the grounded status
         if (Physics.CheckBox(Ctx.transform.position, Ctx.boxSize, Ctx.transform.rotation, Ctx.layerMask))
         {
-            Debug.Log("Grounded");
+            //Debug.Log("Grounded");
             Ctx.JumpCount = 0;
             Ctx.Grounded = true;
             return true;
         }
         else
         {
-            Debug.Log("NOT grounded");
+            //Debug.Log("NOT grounded");
             Ctx.Grounded = false;
             return false;
         }

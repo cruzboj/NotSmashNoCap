@@ -60,18 +60,34 @@
     <Analyzer Include="D:\unity\unity Editor\2022.3.46f1\Editor\Data\Tools\Unity.SourceGenerators\Unity.Properties.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\scripts\AttackCheck\ComboCharacter.cs" />
     <Compile Include="Assets\scripts\PlayerIdleState.cs" />
+    <Compile Include="Assets\scripts\AttackBaseState.cs" />
     <Compile Include="Assets\PlayerMoveSet.cs" />
     <Compile Include="Assets\scripts\PlayerGroundedState.cs" />
     <Compile Include="Assets\scripts\PlayerStateFactory.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\AirUpState.cs" />
+    <Compile Include="Assets\scripts\Hitboxs\PlayerHealth.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\GroundComboState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\StateMachine.cs" />
     <Compile Include="Assets\scripts\PlayerRunState.cs" />
     <Compile Include="Assets\scripts\PlayerBaseState.cs" />
-    <Compile Include="Assets\scripts\PlayerNormalA.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\GroundEntryState.cs" />
     <Compile Include="Assets\PlayerInput.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\GroundFinisherState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\MeleeEntryState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\State.cs" />
     <Compile Include="Assets\testerMoveSet.cs" />
+    <Compile Include="Assets\scripts\Hitboxs\Hurtbox.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\AirLeftRightState.cs" />
     <Compile Include="Assets\scripts\PlayerWalkState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\TeamComponent.cs" />
     <Compile Include="Assets\scripts\PlayerStateMachine.cs" />
+    <Compile Include="Assets\scripts\Hitboxs\Hitbox.cs" />
     <Compile Include="Assets\scripts\PlayerJumpState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\IdleCombatState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\MeleeBaseState.cs" />
+    <Compile Include="Assets\scripts\AttackCheck\AirState.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

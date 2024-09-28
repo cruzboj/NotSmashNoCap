@@ -5,6 +5,7 @@ using UnityEngine.InputSystem;
 
 public class PlayerStateMachine : MonoBehaviour
 {
+    private float currentYRotation = 0f; // Track the current rotation
     //intis
     private Rigidbody _rb;
     private PlayerInput _playerInput;
@@ -23,12 +24,13 @@ public class PlayerStateMachine : MonoBehaviour
 
     //movement
     public bool _isMovementPressed;
+    public bool IsMovementPressed { get { return _isMovementPressed; } set { _isMovementPressed = value; } }
     Vector2 _currentMovementInput;
     Vector2 _currentMovement;
     public float _walkSpeed = 3f;
     public float _runSpeed = 6f;
     private float _currentSpeed;
-    private float _threshold = 0.8f;
+    private float _threshold = 0.9f;
     private float _rotationFactorPerFrame = 25.0f;
 
     //jump
@@ -38,7 +40,10 @@ public class PlayerStateMachine : MonoBehaviour
     private float _jumpForce = 12f;
 
     //Attack Normal
-    public bool _isAttackNPressed;
+    public bool _isAttackNPressed = false;
+    public bool _upPressed = false;
+    public bool IsAttackNPressed { get { return _isAttackNPressed; } set { _isAttackNPressed = value; } }
+
     public int _attackCycle;
     private int _numberOfAttacks = 3; // Total number of attacks in the cycle
     public int NumberOfAttacks { get { return _numberOfAttacks; } }
@@ -71,7 +76,7 @@ public class PlayerStateMachine : MonoBehaviour
     public Animator Animator { get { return _animator; } }
     public bool Grounded {get { return _grounded; } set { _grounded = value; } }
     public float DownForce { get { return _downForce; } }
-    public bool IsMovementPressed { get { return _isMovementPressed; } }
+    //public bool IsMovementPressed { get { return _isMovementPressed; } }
     public Vector2 CurrentMovementInput { get { return _currentMovementInput; } }
     public Vector2 CurrentMovement { get { return _currentMovement; } set { _currentMovement = value; } }
     public float WalkSpeed { get { return _walkSpeed; } }
@@ -82,7 +87,6 @@ public class PlayerStateMachine : MonoBehaviour
     public int MaxJumpCount { get { return _maxJumpCount; } }
     public float JumpForce { get { return _jumpForce; } }
     public bool IsJumpPressed { get { return _isJumpPressed; } set { _isJumpPressed = value; }}
-    public bool IsAttackNPressed { get { return _isAttackNPressed; }set { _isAttackNPressed = value; }}
     public int IsWalkingHash { get { return _isWalkingHash; } }
     public int IsRunningHash { get { return _isRunningHash; } }
     public int IsAttackNHash { get { return _isAttackNHash; } }
@@ -118,11 +122,13 @@ public class PlayerStateMachine : MonoBehaviour
         _playerInput.CharacterControls.Jump.started += onJump;
         _playerInput.CharacterControls.AttackN.started += onAttackN;
         _playerInput.CharacterControls.AttackN.canceled += onAttackN;
+        _playerInput.CharacterControls.Up.started += onUpAir;
+        _playerInput.CharacterControls.Up.canceled += onUpAir;
     }
     void Update()
     {
         handleRotation();
-        //GroundCheck();
+        GroundCheck();
         _currentState.UpdateStates();
         //Debug.Log("Current State: " + _currentState.GetType().Name);
     }
@@ -158,10 +164,6 @@ public class PlayerStateMachine : MonoBehaviour
         float inputMagnitude = Mathf.Abs(_currentMovementInput.x);
         _currentSpeed = inputMagnitude >= _threshold ? _runSpeed : _walkSpeed;
         //Debug.Log($"Movement input: {_currentMovementInput.x}, Speed set to: {_currentSpeed}");
-
-        // Update animator parameters based on speed
-        //_animator.SetBool(_isWalkingHash, _currentSpeed == _walkSpeed);
-        //_animator.SetBool(_isRunningHash, _currentSpeed == _runSpeed);
     }
 
     void onJump(InputAction.CallbackContext context)
@@ -182,25 +184,34 @@ public class PlayerStateMachine : MonoBehaviour
             _isAttackNPressed = false;
         }
     }
+    void onUpAir(InputAction.CallbackContext context)
+    {
+        if (context.started) // If Attack Normal is pressed
+        {
+            _upPressed = true;
+        }
+        else if (context.canceled) // If Attack Normal is released
+        {
+            _upPressed = false;
+        }
+    }
     void handleRotation()
     {
-        //Debug.Log("F(Entered) :: handle Rotation");
-        // Use the current movement input to determine the direction to look at
-        Vector3 positionToLookAt;
-        positionToLookAt.x = _currentMovementInput.x;
-        positionToLookAt.y = 0.0f; // Ensure the rotation stays horizontal
-        positionToLookAt.z = 0;
-
-        // Only rotate if the player is pressing the movement keys
-        if (_isMovementPressed)
+        // Check if there is movement input to determine rotation direction
+        if (_currentMovementInput.x > 0) // Moving right
         {
-            //Debug.Log("F(Entered) :: is Rotation");
-            // Calculate the new rotation direction
-            Quaternion targetRotation = Quaternion.LookRotation(positionToLookAt);
-
-            // Apply the rotation smoothly
-            transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * _rotationFactorPerFrame);
+            currentYRotation = 90f; // Snap to 90 degrees
         }
+        else if (_currentMovementInput.x < 0) // Moving left
+        {
+            currentYRotation = -90f; // Snap to -90 degrees
+        }
+
+        // Create a target rotation based on the current Y angle
+        Quaternion targetRotation = Quaternion.Euler(0f, currentYRotation, 0f);
+
+        // Smoothly interpolate to the target rotation
+        transform.rotation = Quaternion.Slerp(transform.rotation, targetRotation, Time.deltaTime * _rotationFactorPerFrame);
     }
 
     private void OnEnable()
@@ -243,5 +254,22 @@ public class PlayerStateMachine : MonoBehaviour
     public void StartStateCoroutine(IEnumerator coroutine)
     {
         StartCoroutine(coroutine);
+    }
+    private bool GroundCheck()
+    {
+        // Check if the box collides with the ground and set the grounded status
+        if (Physics.CheckBox(transform.position, boxSize, transform.rotation, layerMask))
+        {
+            //Debug.Log("Grounded");
+            _jumpCount = 0;
+            _grounded = true;
+            return true;
+        }
+        else
+        {
+            //Debug.Log("NOT grounded");
+            _grounded = false;
+            return false;
+        }
     }
 }

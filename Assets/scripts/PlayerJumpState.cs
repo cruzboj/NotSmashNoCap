@@ -28,12 +28,12 @@ public class PlayerJumpState : PlayerBaseState
 
     public override void UpdateState()
     {
-        GroundCheck();
+        //GroundCheck();
         CheckSwitchStates();
     }
 
     public override void ExitState() {
-        Ctx.Animator.SetBool(Ctx.IsJumpingHash, false);
+        //Ctx.Animator.SetBool(Ctx.IsJumpingHash, false);
     }
 
     public override void InitalizeSubState()
@@ -72,23 +72,23 @@ public class PlayerJumpState : PlayerBaseState
         //}
     }
 
-    private bool GroundCheck()
-    {
-        // Check if the box collides with the ground and set the grounded status
-        if (Physics.CheckBox(Ctx.transform.position, Ctx.boxSize, Ctx.transform.rotation, Ctx.layerMask))
-        {
-            Debug.Log("Grounded");
-            Ctx.JumpCount = 0;
-            Ctx.Grounded = true;
-            return true;
-        }
-        else
-        {
-            Debug.Log("NOT grounded");
-            Ctx.Grounded = false;
-            return false;
-        }
-    }
+    //private bool GroundCheck()
+    //{
+    //    // Check if the box collides with the ground and set the grounded status
+    //    if (Physics.CheckBox(Ctx.transform.position, Ctx.boxSize, Ctx.transform.rotation, Ctx.layerMask))
+    //    {
+    //        //Debug.Log("Grounded");
+    //        Ctx.JumpCount = 0;
+    //        Ctx.Grounded = true;
+    //        return true;
+    //    }
+    //    else
+    //    {
+    //        //Debug.Log("NOT grounded");
+    //        Ctx.Grounded = false;
+    //        return false;
+    //    }
+    //}
 
     void changeAnimeationState(string newState)
     {

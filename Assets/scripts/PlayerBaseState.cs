@@ -1,3 +1,4 @@
+using UnityEngine; // Ensure this is included
 public abstract class PlayerBaseState
 {
     private bool _isRootState = false;
@@ -5,15 +6,16 @@ public abstract class PlayerBaseState
     private PlayerStateFactory _factory;
     private PlayerBaseState _currentSubState;
     private PlayerBaseState _currentSuperState;
-
     protected bool IsRootState { set { _isRootState = value; } }
     protected PlayerStateMachine Ctx { get { return _ctx; } }
     protected PlayerStateFactory Factory { get { return _factory; } }
 
+    protected float fixedtime { get; set; }
     public PlayerBaseState(PlayerStateMachine currentContext, PlayerStateFactory playerStateFactory)
     {
         _ctx = currentContext;
         _factory = playerStateFactory;
+        fixedtime = 0;
     }
 
     public abstract void EnterState();
@@ -25,6 +27,7 @@ public abstract class PlayerBaseState
     // Update current state and any sub-state
     public void UpdateStates()
     {
+        fixedtime += Time.deltaTime;
         UpdateState();
         _currentSubState?.UpdateStates(); // Recursively update sub-states
     }
