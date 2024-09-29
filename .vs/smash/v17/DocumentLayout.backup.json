@@ -3,56 +3,16 @@
   "WorkspaceRootPath": "D:\\unity\\Uprojects\\smash\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|d:\\unity\\uprojects\\smash\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\combocharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\combocharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\airupstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\airupstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\meleeentrystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\meleeentrystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\meleebasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\meleebasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playerstatemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\statemachine.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\hitboxs\\hitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\hitboxs\\hitbox.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|d:\\unity\\uprojects\\smash\\assets\\scripts\\attackcheck\\airleftrightstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\airleftrightstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\idlecombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\idlecombatstate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackbasestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\state.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\groundcombostate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\groundcombostate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\attackcheck\\groundentrystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\attackcheck\\groundentrystate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|D:\\unity\\Uprojects\\smash\\assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F5E62761-1E85-029D-DD52-3BEA94833224}|Assembly-CSharp.csproj|solutionrelative:assets\\scripts\\playeridlestate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,171 +22,44 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "StateMachine.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\StateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\StateMachine.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\StateMachine.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\StateMachine.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:37:51.964Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "AirUpState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\AirUpState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\AirUpState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\AirUpState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\AirUpState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:32:35.944Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Hitbox.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\Hitboxs\\Hitbox.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\Hitboxs\\Hitbox.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\Hitboxs\\Hitbox.cs",
-              "RelativeToolTip": "Assets\\scripts\\Hitboxs\\Hitbox.cs",
-              "ViewState": "AgIAACMAAAAAAAAAAAAAADUAAABMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T02:29:30.277Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "PlayerStateMachine.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerStateMachine.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
-              "RelativeToolTip": "Assets\\scripts\\PlayerStateMachine.cs",
-              "ViewState": "AgIAAGIAAAAAAAAAAAAuwLkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T01:15:00.535Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "MeleeBaseState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\MeleeBaseState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\MeleeBaseState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\MeleeBaseState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\MeleeBaseState.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwCIAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:38:59.473Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
               "Title": "ComboCharacter.cs",
               "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\ComboCharacter.cs",
               "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\ComboCharacter.cs",
               "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\ComboCharacter.cs",
               "RelativeToolTip": "Assets\\scripts\\AttackCheck\\ComboCharacter.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAQwBIAAAAxAAAAAAAAAA==",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwDgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:52:20.057Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-09-29T01:34:20.056Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "MeleeEntryState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\MeleeEntryState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\MeleeEntryState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\MeleeEntryState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\MeleeEntryState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAIAAAAAAAAAA==",
+              "Title": "PlayerIdleState.cs",
+              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerIdleState.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerIdleState.cs",
+              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerIdleState.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerIdleState.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAA9wB8AAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T06:42:13.418Z",
+              "WhenOpened": "2024-09-29T00:28:17.869Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerStateMachine.cs",
+              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
+              "RelativeDocumentMoniker": "Assets\\scripts\\PlayerStateMachine.cs",
+              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\PlayerStateMachine.cs",
+              "RelativeToolTip": "Assets\\scripts\\PlayerStateMachine.cs",
+              "ViewState": "AgIAAKYAAAAAAAAAAAAQwK0AAABCAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-28T21:12:34.634Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "AirLeftRightState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\AirLeftRightState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\AirLeftRightState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\AirLeftRightState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\AirLeftRightState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T05:36:51.871Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "AttackBaseState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackBaseState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackBaseState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackBaseState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackBaseState.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAowCcAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T06:31:11.386Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "IdleCombatState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\IdleCombatState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\IdleCombatState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\IdleCombatState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\IdleCombatState.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T06:42:09.97Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GroundComboState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\GroundComboState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\GroundComboState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\GroundComboState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\GroundComboState.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-28T04:35:31.409Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "State.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\State.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\State.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\State.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\State.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:37:02.294Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GroundEntryState.cs",
-              "DocumentMoniker": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\GroundEntryState.cs",
-              "RelativeDocumentMoniker": "Assets\\scripts\\AttackCheck\\GroundEntryState.cs",
-              "ToolTip": "D:\\unity\\Uprojects\\smash\\Assets\\scripts\\AttackCheck\\GroundEntryState.cs",
-              "RelativeToolTip": "Assets\\scripts\\AttackCheck\\GroundEntryState.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAgwCEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-26T00:37:53.098Z"
             }
           ]
         }

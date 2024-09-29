@@ -424,7 +424,7 @@ ModelImporter:
       - path: root/pelvis/thigh_r/thigh_twist_01_r
         weight: 1
       maskType: 1
-      maskSource: {fileID: 31900000, guid: 33e45b6126e155940866b008b183e481, type: 2}
+      maskSource: {fileID: 31900000, guid: 809e2cd9603dbd74fb41489dc8be4763, type: 2}
       additiveReferencePoseFrame: 0
     isReadable: 1
   meshes:
@@ -876,23 +876,23 @@ ModelImporter:
         length: 0
         modified: 0
     skeleton:
-    - name: Frank_RPG_2Hand_Unity_Skin(Clone)
+    - name: Frank_2Handed_Skin(Clone)
       parentName: 
       position: {x: 0, y: 0, z: 0}
       rotation: {x: 0, y: 0, z: 0, w: 1}
       scale: {x: 1, y: 1, z: 1}
     - name: Cloak
-      parentName: Frank_RPG_2Hand_Unity_Skin(Clone)
+      parentName: Frank_2Handed_Skin(Clone)
       position: {x: -0, y: 1.5982778, z: -0.8258288}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 0.787137, z: 1}
     - name: Frank_Mesh_Unity
-      parentName: Frank_RPG_2Hand_Unity_Skin(Clone)
+      parentName: Frank_2Handed_Skin(Clone)
       position: {x: -0.00000029563904, y: 0, z: 0}
       rotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071068}
       scale: {x: 1, y: 1, z: 1}
     - name: root
-      parentName: Frank_RPG_2Hand_Unity_Skin(Clone)
+      parentName: Frank_2Handed_Skin(Clone)
       position: {x: -0, y: 0, z: 0}
       rotation: {x: 0.000000021855694, y: 0, z: -0, w: 1}
       scale: {x: 1, y: 1, z: 1}
@@ -1314,7 +1314,7 @@ ModelImporter:
     hasTranslationDoF: 0
     hasExtraRoot: 1
     skeletonHasParents: 1
-  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 659c7284dc1e16a4bbbf3d746380383e,
+  lastHumanDescriptionAvatarSource: {fileID: 9000000, guid: 15e3ec89c42b1f04f8544df9d308efe3,
     type: 3}
   animationType: 3
   humanoidOversampling: 1

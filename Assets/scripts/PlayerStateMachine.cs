@@ -32,12 +32,16 @@ public class PlayerStateMachine : MonoBehaviour
     private float _currentSpeed;
     private float _threshold = 0.9f;
     private float _rotationFactorPerFrame = 25.0f;
+    //running effect
+    public ParticleSystem SmokeEffect;
 
     //jump
     public bool _isJumpPressed = false; // JumpPressed
     public int _jumpCount = 0; // jump counter
     private int _maxJumpCount = 1; // max Jumps allowed
     private float _jumpForce = 12f;
+    //doublejump effect
+    public ParticleSystem DoublejumpSmoke;
 
     //Attack Normal
     public bool _isAttackNPressed = false;
@@ -49,6 +53,7 @@ public class PlayerStateMachine : MonoBehaviour
     public int NumberOfAttacks { get { return _numberOfAttacks; } }
     public int AttackCycle { get => _attackCycle; set { _attackCycle = value >= _numberOfAttacks ? 0 : value; } }
 
+    
     //new Animator States
     private string _animationState;
     //const string _PLAYER_IDLE = "Player_idle";
@@ -125,6 +130,11 @@ public class PlayerStateMachine : MonoBehaviour
         _playerInput.CharacterControls.Up.started += onUpAir;
         _playerInput.CharacterControls.Up.canceled += onUpAir;
     }
+    //void Start()
+    //{
+    //    DontDestroyOnLoad(DoublejumpSmoke.gameObject);
+    //}
+
     void Update()
     {
         handleRotation();
@@ -164,6 +174,13 @@ public class PlayerStateMachine : MonoBehaviour
         float inputMagnitude = Mathf.Abs(_currentMovementInput.x);
         _currentSpeed = inputMagnitude >= _threshold ? _runSpeed : _walkSpeed;
         //Debug.Log($"Movement input: {_currentMovementInput.x}, Speed set to: {_currentSpeed}");
+        //if (_currentMovementInput.magnitude >= _threshold)
+        //{
+        if (!_isMovementPressed || !_grounded || _isJumpPressed && _isMovementPressed)
+            SmokeEffect.Stop();
+        else if(_isMovementPressed && _grounded)
+            SmokeEffect.Play();
+        //}
     }
 
     void onJump(InputAction.CallbackContext context)
@@ -171,6 +188,7 @@ public class PlayerStateMachine : MonoBehaviour
         if (context.started) //if jump is pressed
         {
             _isJumpPressed = true;
+            CreateDoublejumpSmoke();
         }
     }
     void onAttackN(InputAction.CallbackContext context)
@@ -239,6 +257,18 @@ public class PlayerStateMachine : MonoBehaviour
                 Debug.Log("Device Reconnected::" + device.name);
                 break;
         }
+    }
+
+    void CreateSmoke()
+    {
+        if(_isMovementPressed && _grounded)
+            SmokeEffect.Play();
+        else if(!_isMovementPressed || !_grounded || _isJumpPressed)
+            SmokeEffect.Stop();
+    }
+    void CreateDoublejumpSmoke()
+    {
+        DoublejumpSmoke.Play();
     }
     //void changeAnimeationState(string newState)
     //{

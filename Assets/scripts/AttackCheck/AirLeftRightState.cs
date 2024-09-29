@@ -12,7 +12,7 @@ public class AirLeftRightState : MeleeBaseState
         attackIndex = _comboCharacter._attackNumber;
         duration = 0.5f;
         animator.SetTrigger("Attack" + attackIndex);
-        //_comboCharacter._attackNumber = 1;
+        _comboCharacter._attackNumber = 1;
         //Debug.Log("Player Attack " + attackIndex + " Fired!");
     }
 

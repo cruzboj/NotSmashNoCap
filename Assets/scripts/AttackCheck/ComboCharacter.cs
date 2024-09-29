@@ -40,8 +40,23 @@ public class ComboCharacter : MonoBehaviour
     {
         if (_isAttackNPressed && meleeStateMachine.CurrentState.GetType() == typeof(IdleCombatState))
         {
-            if (_playerStateMachine._grounded)
+
+            //if (_playerStateMachine._grounded && (_playerStateMachine.CurrentMovementInput.magnitude < _playerStateMachine.Threshold))
+            //{
+            //    _attackNumber = 8;
+            //    meleeStateMachine.SetNextState(new SideAttackState());
+            //}
+
+            //if(_playerStateMachine._grounded && (_playerStateMachine.CurrentMovementInput.magnitude >= _playerStateMachine.Threshold))
+            //{
+            //    _attackNumber = 7;
+            //    meleeStateMachine.SetNextState(new DashState());
+            //}
+
+            if (_playerStateMachine._grounded && !_playerStateMachine._isMovementPressed) 
+            {
                 meleeStateMachine.SetNextState(new GroundEntryState());
+            }
             else
             {
                 if (_isAttackNPressed && !_playerStateMachine._grounded)
